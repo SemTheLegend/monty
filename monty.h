@@ -28,14 +28,12 @@
 #define ERR_PCH_USG		211
 #define ERR_PCH_EMP		212
 
-#define  _GNU_SOURCE
 #include <ctype.h>
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -96,8 +94,8 @@ void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void pchar(stack_t **stack, unsigned int line_number);
 void pstr(stack_t **stack, unsigned int line_number);
+void rot(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
-
 
 #endif
